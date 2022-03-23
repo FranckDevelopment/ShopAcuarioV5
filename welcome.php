@@ -11,7 +11,7 @@ session_start();
      }
     $usu = new class_read();
     $datos = "SELECT * FROM Usuario WHERE Email='$correo'";
-    $array_productos=$usu->Mostrar($datos);
+    $usu_datos=$usu->Mostrar($datos);
 
     require('templates/header.php');
 ?>
