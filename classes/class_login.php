@@ -14,9 +14,10 @@
                 //$numRows = $row->num_rows;
                 if($item['Id_status']==2){
                     //if(){
+                        $rfc = $item['RFC'];
                         //$id=$item['RFC'];
                        // echo "<script> alert('¡ Bienvenido a AcuarioShop !');</script>";
-                        return true;
+                        return $rfc;
                     //}
                 }
                 return false;

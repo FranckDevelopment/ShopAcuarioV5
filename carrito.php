@@ -1,8 +1,11 @@
 <?php
     require('templates/header.php');
 
+
 ?>
- <h1>CARRITO</h1>
+ <h1>CARRITO </h1>
+
+
 
 
 

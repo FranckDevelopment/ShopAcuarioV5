@@ -52,9 +52,15 @@
                             </div>
                         </div>
                         <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al Carrito</a></div>
-                        </div>
+                        <form action="" method="post">
+                            <input type="text" name="Id" id="Id" value="<?php echo $item['Id_Producto']?>" >
+                            <input type="text" name="Nombre" id="Nombre" value="<?php echo $item['Nombre']?>" >
+                            <input type="text" name="Precio" id="Precio" value="<?php echo $item['Precio']?>" >
+                            <input type="text" name="Unidades" id="Unidades" value="<?php echo $item['Unidades']?>" >
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al Carrito</a></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <?php }?>

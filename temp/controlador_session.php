@@ -15,7 +15,7 @@
                 if($user->Val_Usu($email,$password)){
                     session_start();
                     $_SESSION['usuario'] = $email;
-                    header("Location: welcome.php?id=$RFC");
+                    header("Location: welcome.php?rfc=$rfc");
                 }else{
                 echo '<div class="alert alert-danger">Usuario no existe</div>';
                 }
