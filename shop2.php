@@ -3,8 +3,9 @@
     $productos = new class_read();
     $datos3 = "SELECT * FROM Productos";
     $array_productos=$productos->Mostrar($datos3);
-    require 'templates/header2.php';
     require 'sesioncarrito.php';
+    require 'templates/header2.php';
+    
 ?>
     <!-- Section-->
     <section class="py-5">
