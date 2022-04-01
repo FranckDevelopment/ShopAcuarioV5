@@ -45,7 +45,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="carrito.php">
+                            <a href="carrito2.php">
                                 <i class='bx bx-wallet icon' ></i>
                                 <span class="text nav-text">Carrito (<?php echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);?>)</span>
                             </a>

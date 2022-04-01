@@ -5,6 +5,7 @@ $mensaje = "";
 $Id = $_POST['Id'];
 $Nombre = $_POST['Nombre'];
 $Precio = $_POST['Precio'];
+$Foto = $_POST['Foto'];
 $Unidades = $_POST['Unidades'];
 
 
@@ -17,6 +18,7 @@ if(isset($_POST['btnAccion'])){
                     'Id'=>$Id,
                     'Nombre'=>$Nombre,
                     'Precio'=>$Precio,
+                    'Foto'=>$Foto,
                     'Unidades'=>$Unidades
                 );
                 $_SESSION['CARRITO'][0]=$producto;
@@ -26,11 +28,21 @@ if(isset($_POST['btnAccion'])){
                     'Id'=> $Id,
                     'Nombre'=> $Nombre,
                     'Precio'=> $Precio,
+                    'Foto'=>$Foto,
                     'Unidades'=>  $Unidades
                 );
                 $_SESSION['CARRITO'][$nump]=$producto;
             }
             
+        break;
+        case 'Eliminar':
+            foreach($_SESSION['CARRITO'] as $indice=>$producto){
+                if($producto['Id']==$Id){
+                    unset($_SESSION['CARRITO'][$indice]);
+                    echo "<script>alert('Producto eliminado del carrito');</script>";
+                }
+
+            }
         break;
     }
 }
